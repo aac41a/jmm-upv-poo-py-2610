@@ -1,16 +1,17 @@
 # This is a sample Python script.
 
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from Alumno import Alumno
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    al1 = Alumno('Jose', 'Marín', '123456789X', 35, 7)
+    al2 = Alumno('David', 'Lopez', '123456000A', 45, 9)
+    al3 = Alumno('Fernando', '', '144456789B', 15, 3)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    print(al1)
+
+    al1.saludar()
+    al1.addNota(13)
+    al1.addAge()
+
+    print(al1.edad)
