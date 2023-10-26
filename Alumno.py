@@ -1,10 +1,14 @@
 #clase alumno
+
+from Asignatura import Asignatura
+
 class Alumno():
     nombre = ''
     apellidos = ''
     dni = ''
     edad = 0
     nota = 0
+    asignaturas = []
 
     def __init__(self, newNom, newApe, newDni, newEdad, newNota):
         self.nombre = newNom
@@ -27,3 +31,11 @@ class Alumno():
     def addAge(self):
         self.edad += 1
         print('edad modificada')
+
+    def addAsignatura(self, Asignatura):
+        self.asignaturas.append(Asignatura)
+        print('Nueva Nota añadida')
+
+    def delAsignatura(self, Asignatura):
+        self.asignaturas.remove(Asignatura)
+        print('Asignatura eliminada')
